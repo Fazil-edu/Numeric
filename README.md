@@ -41,5 +41,11 @@ Newton(f, x_0)
     while (abs(f(x_1))>epsilon)
         x_0 <- x_1
         x_1 <- x_0 - f(x_0)/f'(x_1)
-    return x_1         
+    return x_1  
+    
+    Newton(f, x)
+    epsilon <- 1/10^10
+    while (abs(f(x))>epsilon)
+         x <- x - f(x)/f'(x)
+    return x      
 ``` 
