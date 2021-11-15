@@ -35,15 +35,7 @@ RegulaFalsi(f, left, right)
 Das [Newton Verfahren](https://de.wikipedia.org/wiki/Newtonverfahren) ist ein etwas schwieriges dennoch ein schnelles Verfahren. Der Pseudocode dafür ist:
 
 ``` 
-Newton(f, x_0)
-    epsilon <- 1/10^10
-    x_1 <- x_0 - f(x_0)/f'(x_1)
-    while (abs(f(x_1))>epsilon)
-        x_0 <- x_1
-        x_1 <- x_0 - f(x_0)/f'(x_1)
-    return x_1  
-    
-    Newton(f, x)
+  Newton(f, x)
     epsilon <- 1/10^10
     while (abs(f(x))>epsilon)
          x <- x - f(x)/f'(x)
