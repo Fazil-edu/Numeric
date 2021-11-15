@@ -9,7 +9,7 @@ Das [Bisektionsverfahren](https://de.wikipedia.org/wiki/Bisektion) ist sehr einf
   Bisektion(f, left, right){
     epsilon <- 1/10^10)
     zeroPoint <- right
-    while abs(abs(f(zeroPoint))>epsilon) > epsilon
+    while abs(f(zeroPoint))>epsilon
         zeroPoint <- (left+right)/2
         if f(left)*pf(zeroPoint) < 0
             right <- zeroPoint        
